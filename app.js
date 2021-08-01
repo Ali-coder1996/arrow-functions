@@ -196,8 +196,9 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// undefine
+// The constructor function (joe object).
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//object
+//The global window object.
 // 3. Explain why "this" is different when an arrow function is used.
-//the arrow function resolves this lexically,Inside of a regular JavaScript function, this value (aka the execution context) is dynamic.
+//Because the arrow functions won't bind the this with the object that call that fun (It will give us
+// the global object which is the window obj) So we don't use the => with constructors and proto.
